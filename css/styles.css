@@ -162,60 +162,64 @@ h2 {
 }
 
 /* styles for shape content */
-.ux-design, .graphic, .marketing, .social-media, .user-research, .game, .animation, .modeling, .web-design {
+.photoshop, .figma, .sketch, .ux, .illustrator, .ui, .research, .wireframing, .XD, .prototyping {
     background-color: transparent;
     padding: 1rem 2rem 1rem 2.4rem;
     border: 0rem;
     background-position: left;    
     background-repeat: no-repeat;
 }
-.ux-design, .graphic, .marketing, .social-media, .user-research, .game, .animation, .modeling, .web-design:disabled {
+.photoshop, .figma, .sketch, .ux, .illustrator, .ui, .research, .wireframing, .XD, .prototyping:disabled {
     color: black;
 }
 
 /* UX/UI design */
-.ux-design {
-    background-image: url("../images/skills_icons/ux:ui%20design.svg");
+.photoshop {
+    background-image: url("../images/skills_icons/photoshop.svg");
 }
 
 /* graphic design */
-.btn-skills .graphic {
-    background-image: url("../images/skills_icons/graphic%20design.svg");
+.btn-skills .figma {
+    background-image: url("../images/skills_icons/figma.svg");
 }
 
 /* marketing */
-.btn-skills .marketing {
-    background-image: url("../images/skills_icons/marketing.svg");   
+.btn-skills .sketch {
+    background-image: url("../images/skills_icons/sketch.svg");   
 }
 
 /* social media */
-.btn-skills .social-media {
-    background-image: url("../images/skills_icons/social%20media.svg");   
+.btn-skills .ux {
+    background-image: url("../images/skills_icons/ux.svg");   
 }
 
 /* user research */
-.btn-skills .user-research {
-    background-image: url("../images/skills_icons/user%20research.svg");   
+.btn-skills .illustrator {
+    background-image: url("../images/skills_icons/illustrator.svg");   
 }
 
 /* game design */
-.btn-skills .game {
-    background-image: url("../images/skills_icons/game%20design.svg");   
+.btn-skills .ui {
+    background-image: url("../images/skills_icons/ui.svg");   
 }
 
 /* animation */
-.btn-skills .animation {
-    background-image: url("../images/skills_icons/animation.svg");   
+.btn-skills .research {
+    background-image: url("../images/skills_icons/research.svg");   
 }
 
 /* 3d modeling */
-.btn-skills .modeling {
-    background-image: url("../images/skills_icons/3d%20modeling.svg");    
+.btn-skills .wireframing {
+    background-image: url("../images/skills_icons/wireframing.svg");    
 }
 
 /* web design */
-.btn-skills .web-design {
-    background-image: url("../images/skills_icons/web%20design.svg");  
+.btn-skills .XD {
+    background-image: url("../images/skills_icons/xd.svg");  
+}
+
+.prototyping {
+    background-image: url("../images/skills_icons/prorotyping.svg");  
 }
 
 /*******************************/
