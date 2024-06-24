@@ -1,0 +1,708 @@
+
+
+
+
+
+/* bordered button in the header RESUME */
+.btn-outline-ux {
+	display: inline-block;
+	padding: 0.875rem 1.5rem 0.875rem 1.5rem;
+	border: 0.1rem solid black;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: black;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+	transition: all 0.2s;
+}
+
+.btn-outline-ux:hover {
+	background-color: black;
+    border: 0.1rem solid black;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+/* portfolio dropdown icon */
+.dropdown-ux {
+  position: relative;
+  display: inline-block;
+    background-image: url("../images/product_design_directory/dropdown.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+
+.dropdown-ux:hover {
+  position: relative;
+  display: inline-block;
+    background-image: url("../images/product_design_directory/dropdown_hover.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;  
+
+}
+
+.dropdown-ux:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-ux:hover .dropbtn {
+    background-color: transparent;
+}
+
+
+
+
+
+
+/* ux project tags */
+.skills {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+
+
+
+/**************************/
+/*       header menu      */
+/**************************/
+.navbar-ux {
+    z-index: 999;
+	background-color: transparent;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.2s;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.navbar-ux .container {
+	max-width: 100%;
+    
+}
+
+.navbar-ux .navbar-brand.logo-image img {
+    fill: aqua;
+    width: 160px;
+	height: auto;
+}
+
+.navbar-ux .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+
+}
+
+/* sections + dropdown menu humburger */
+.navbar-ux .nav-item .nav-link {
+	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
+    text-align: left;
+    width: auto;
+    color: black;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.navbar-ux .nav-item .nav-link:hover {
+  	color: white;
+}
+
+.navbar-ux .nav-item .nav-link:active {
+	color: white;
+}
+
+
+/* sections + dropdown menu humburger */
+.navbar-ux .nav-item-mobile .nav-link {
+	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
+    text-align: left;
+    width: auto;
+    color: black;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.navbar-ux .nav-item-mobile .nav-link:hover {
+  	color: white;
+}
+
+.navbar-ux .nav-item-mobile .nav-link:active {
+	color: white;
+}
+
+
+
+.navbar-ux .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-ux .dropdown-toggle:focus { /* removes dropdown outline on focus */
+	outline: 0;
+}
+
+.navbar-ux .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: black;
+}
+
+.navbar-ux .dropdown-item {
+	color: black;
+	opacity: 0.8;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.navbar-ux .dropdown-item:hover {
+	background-color: white;
+	color: white;
+	opacity: 1;
+}
+
+
+.navbar-ux .nav-item .btn-outline-sm {
+	margin-top: 0.25rem;
+	margin-bottom: 1.375rem;
+	margin-left: 0.5rem;
+	border: 0.125rem solid black;
+	color: black;
+}
+
+.navbar-ux .nav-item .btn-outline-sm:hover {
+	background-color: black;
+	color: black;
+	border: 0.125rem solid black;
+}
+
+.navbar-ux .navbar-toggler {
+	padding: 0;
+	border: none;
+	color: white;
+	font-size: 2rem;
+}
+
+.navbar-ux button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-ux button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-ux button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-ux button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+/* end of menu */
+
+
+
+
+
+
+
+/* VIEW OTHER CASE STUDIES button */
+
+.btn-view-other-cases {
+  	display: inline-block;
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    margin-top: 6%;
+	border: 0.125rem solid black;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: black;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	transition: all 0.2s;  
+}
+
+.btn-view-other-cases:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
+/* whole header background settings */
+.ux_header {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+
+}
+
+/* case name alignment settings */
+.ux_header .text-container {
+    z-index: 999;
+    width: 100%;
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+    position: relative;
+    text-align: center;
+}
+
+/* case name */
+.case_name {
+    width: 4rem;
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+	font: 9.5rem/7.5rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+	letter-spacing: -4px;
+    position: relative;
+}
+
+.case_name:hover {
+    color: black;
+}
+
+/* overview section */
+.ux-section {
+    text-align: center;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+}
+
+.ux-section-container {
+    text-align: left;
+    padding-top: 2rem;
+}
+
+.ux-section .h1 {
+    text-align: center;
+}
+
+/* subsection name */
+.subsection {
+    text-align: left;
+	color: black;
+    text-transform: uppercase;
+	font: 1.175rem/1.75rem "indivisible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	letter-spacing: -0.1px;
+    padding-bottom: 1.5rem;
+}
+
+/* horizontal image section */
+.horizontal-img {
+    transition: all 0.2s;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 22rem;
+}
+
+/* quotations body text in half of the screen with margin */
+.half-body-text-left {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 3%;
+    width: 48%;
+}
+
+/* body text in half of the screen */
+.half-body-text-right {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+}
+
+/* quatation text itself */
+.quote-text {
+    vertical-align: top;
+    width: 94%;
+    display: inline-block;
+    color: black;
+	font: 1.8rem/2.4rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+	letter-spacing: -0.1px;
+}
+
+/* line container in quatation text */
+.line {
+    display: inline-block;
+    vertical-align: top;
+    width: 2%;
+}
+
+.icon-line {
+    display: inline-block;
+}
+
+/* overview text part */
+.overview-text-part {
+    vertical-align: top;
+    display: inline-block;
+    width: 70%;
+}
+
+/* overview icon and line part */
+.overview-icon-part {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    padding-right: 2%;
+}
+
+/* icon itself */
+.icon {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 90%;
+}
+
+.icon-img {
+    width: 3.5rem;
+    padding-bottom: 0.8rem;
+}
+
+
+.styleguide-section {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin-right: 8%;
+}
+
+
+.btn-skills .tag {
+    padding: 1rem 2rem 1rem 0rem;
+    border: 0rem;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;    
+}
+
+.btn-skills .tag:disabled {
+    color: black;
+}
+
+
+
+/* media queries (screen sizes) */
+
+/*******************************************/
+/* all screens of 68px width and larger    */
+/*******************************************/
+@media (min-width: 68px) {
+    
+.dropdown-ux {
+  display: none;
+    }
+    
+/* horizontal image section */
+.horizontal-img {
+    height: 10rem;
+}
+    
+/* VIEW OTHER CASE STUDIES button */
+
+.btn-view-other-cases {
+	padding: 1.5rem 1.125rem 1.5rem 1.125rem;
+    font: 0.8rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+}
+    
+    
+    
+    
+/* quatation text itself */
+.quote-text {
+	font: 1rem/1.6rem "indivisible", sans-serif;
+    font-style: italic;
+    padding-top: 1rem;
+}
+    
+/* body text in half of the screen */
+.half-body-text-right {
+    padding-top: 1.2rem;
+    width: 100%;
+}
+    
+/* quotations body text in half of the screen with margin */
+.half-body-text-left {
+    margin-right: 0%;
+    width: 100%;
+}
+    
+/* overview section */
+.ux-section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+    
+/* overview text part */
+.overview-text-part {
+    display: inline-block;
+    width: 100%;
+}
+  
+    
+.overview-icon-part {
+    display: none;
+    }
+    
+/* subsection name */
+.subsection {
+	font: 1rem/1.75rem "indivisible", sans-serif;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+    
+    
+.ux-section-container {
+    padding-top: 1.2rem;
+}
+    
+    
+.btn-skills .tag {
+    padding: 1rem 1rem 1rem 0rem;   
+}
+    
+/* ux project tags */
+.skills {
+    margin-top: 0rem;
+}
+
+    
+/* whole header background settings */
+.ux_header {
+    background-image: none; 
+    height: 400px;
+    
+
+}
+    
+/* case name alignment settings */
+.ux_header .text-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+    
+    
+/* case name */
+.case_name {
+	font: 3rem/7.5rem "indivisible";
+    font-weight: 900;
+}
+    
+    
+
+/* menu */
+.navbar-ux {
+    background-color: rgba(0,0,0,0.1);
+    }
+    
+}
+
+
+/*******************************************/
+/* all screens of 768px width and larger    */
+/*******************************************/
+@media (min-width: 768px) {
+    
+/* horizontal image section */
+.horizontal-img {
+    height: 22rem;
+}
+    
+/* VIEW OTHER CASE STUDIES button */
+
+.btn-view-other-cases {
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+}
+    
+    
+/* quatation text itself */
+.quote-text {
+	font: 1.8rem/2.4rem "indivisible", sans-serif;
+    font-style: italic;
+        padding-top: 0rem;
+
+}
+    
+/* body text in half of the screen */
+.half-body-text-right {
+    width: 48%;
+        padding-top: 0rem;
+
+}
+    
+/* quotations body text in half of the screen with margin */
+.half-body-text-left {
+    margin-right: 3%;
+    width: 48%;
+}
+    
+
+    
+/* overview section */
+.ux-section {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+}
+    
+    
+/* overview text part */
+.overview-text-part {
+    display: inline-block;
+    width: 79%;
+}
+    
+    
+    
+.overview-icon-part {
+    display: inline-block;
+    }
+    
+/* subsection name */
+.subsection {
+	font: 1.175rem/1.75rem "indivisible", sans-serif;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+    
+.btn-skills .tag {
+    padding: 1rem 2rem 1rem 0rem;   
+}
+    
+/* ux project tags */
+.skills {
+    margin-top: 2rem;
+}
+    
+/* whole header background settings */
+.ux_header {
+    height: 650px;
+
+}
+    
+/* case name alignment settings */
+.ux_header .text-container {
+    margin-top: 11rem;
+    margin-bottom: 11rem;
+}
+    
+/* case name */
+.case_name {
+	font: 6rem/7.5rem "indivisible";
+    font-weight: 900;
+}
+
+    
+}
+
+
+/*******************************************/
+/* all screens of 992px width and larger    */
+/*******************************************/
+@media (min-width: 992px) {
+    
+.dropdown-ux {
+  display: inline-block;
+    }
+    
+/* subsection name */
+.subsection {
+	font: 1.175rem/1.75rem "indivisible", sans-serif;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+    
+    
+.ux-section-container {
+    padding-top: 2rem;
+}
+    
+
+    
+/* case name alignment settings */
+.ux_header .text-container {
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+
+}
+    
+/* case name */
+.case_name {
+	font: 8rem/7.5rem "indivisible";
+    font-weight: 900;
+}
+    
+    
+/* menu */
+.navbar-ux {
+    background-color: transparent;
+    }
+    
+}
+
+
+/*******************************************/
+/* all screens of 1200px width and larger    */
+/*******************************************/
+@media (min-width: 1200px) {
+    
+/* whole header background settings */
+.ux_header {
+    background-image: url('../images/product_design_directory/bridge/bridge_background.png'); 
+    height: 700px;
+
+}
+    
+/* case name */
+.case_name {
+	font: 9.5rem/7.5rem "indivisible";
+    font-weight: 900;
+}
+
+    
+}
+
+

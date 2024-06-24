@@ -1,0 +1,1290 @@
+html {
+    background: white;
+    width: 100%;
+	height: 100%;
+}
+
+/* portfolio dropdown icon */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-image: url("../images/dropdown.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+.dropdown:hover {
+    background-image: url("../images/dropdown_hover.svg"); 
+}
+
+/* portfolio dropdown window */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* to display portfolio dropdown window */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* portfolio dropdown menu content */
+.dropdown-content a {
+    transition: all 0.2s ease;
+    color: black;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    color: #69d27c;
+    background-color: transparent;
+}
+
+/* about section */
+.about {
+    position: relative;
+    z-index: 998;
+    background-color: white;
+    transition: all 0.2s; /* so that bg color change is smooth */
+}
+
+/* body text in about section and others */
+.body-text,  .body-text-footer {
+    font: 1rem/1.5rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* body text */
+.body-text {
+    color: black;
+}
+
+/* body text in footer */
+.body-text-footer {
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+/* page title header */
+.name {
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+	font: 17rem/13rem "indivisible";
+    font-weight: 900;
+    font-style: normal;
+	letter-spacing: -4px;
+    position: relative;
+    z-index: 1;
+}
+.name:hover {
+    color: white;
+}
+
+/* image of me alignment */
+.image-container {
+    z-index: 0;
+    width: 100%;
+    position: relative;
+}
+
+/* title of footer */
+h1-footer {
+	color: white;
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 0px; 
+}
+
+/* title of project card */
+h2 {
+    text-align: left;
+	color: #333;
+	font: 1.375rem/1.75rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+	letter-spacing: -0.1px;
+}
+
+/* about section top wave */
+.about-top-wave {
+    z-index: 200;
+    height: 5rem;
+    width: 100%;
+    position: relative;
+}
+
+/* about section bottom wave */
+.about-bottom-wave {
+    stroke: black;
+    stroke-dasharray: 2070,10000,20,200;
+    stroke-width: 0.7rem;
+    background-color: transparent;
+    height: 11rem;
+    width: 100%;
+}
+
+/* top and bottom waves path class so that its color changes with bg color of about section */
+.cls-1, .cls-3 {
+    fill: white;
+    transition: all 0.2s;
+}
+
+/*******************************/
+/*       skills buttons        */
+/*******************************/
+
+/* styles for button shape */
+.btn-skills {
+	display: inline-block;
+	padding: 0.6rem 0rem 0.6rem 2rem;
+    margin-top: 1rem;
+    margin-right: 0.7rem;
+	border-radius: 200rem;
+    background: rgba(0,0,0,0.05);
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+.btn-skills:hover {
+    background: rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+
+/* styles for shape content */
+.ux-design, .graphic, .marketing, .social-media, .user-research, .game, .animation, .modeling, .web-design {
+    background-color: transparent;
+    padding: 1rem 2rem 1rem 2.4rem;
+    border: 0rem;
+    background-position: left;    
+    background-repeat: no-repeat;
+}
+.ux-design, .graphic, .marketing, .social-media, .user-research, .game, .animation, .modeling, .web-design:disabled {
+    color: black;
+}
+
+/* UX/UI design */
+.ux-design {
+    background-image: url("../images/skills_icons/ux:ui%20design.svg");
+}
+
+/* graphic design */
+.btn-skills .graphic {
+    background-image: url("../images/skills_icons/graphic%20design.svg");
+}
+
+/* marketing */
+.btn-skills .marketing {
+    background-image: url("../images/skills_icons/marketing.svg");   
+}
+
+/* social media */
+.btn-skills .social-media {
+    background-image: url("../images/skills_icons/social%20media.svg");   
+}
+
+/* user research */
+.btn-skills .user-research {
+    background-image: url("../images/skills_icons/user%20research.svg");   
+}
+
+/* game design */
+.btn-skills .game {
+    background-image: url("../images/skills_icons/game%20design.svg");   
+}
+
+/* animation */
+.btn-skills .animation {
+    background-image: url("../images/skills_icons/animation.svg");   
+}
+
+/* 3d modeling */
+.btn-skills .modeling {
+    background-image: url("../images/skills_icons/3d%20modeling.svg");    
+}
+
+/* web design */
+.btn-skills .web-design {
+    background-image: url("../images/skills_icons/web%20design.svg");  
+}
+
+/*******************************/
+/* 3 purple dots while loading */
+/*******************************/
+
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #7864F6;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+/**************************/
+/*       header menu      */
+/**************************/
+
+/* header menu */
+.navbar-custom {
+    z-index: 999;
+	background-color: transparent;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: all 0.2s;
+    position: absolute;
+    width: 100%;
+}
+
+/* header content */
+.navbar-custom .container {
+	max-width: 100%;
+}
+
+/* signature */
+.navbar-custom .navbar-brand.logo-image img {
+    width: 160px;
+	height: auto;
+}
+
+/* actual menu */
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+
+}
+
+/* sections + mobile dropdown menu humburger */
+.navbar-custom .nav-item .nav-link {
+	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
+    text-align: left;
+    width: auto;
+    color: #f7f5f5;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+.navbar-custom .nav-item .nav-link:hover {
+  	color: #69d27c;
+}
+.navbar-custom .nav-item .nav-link:active {
+	color: white;
+}
+
+/* sections + dropdown menu humburger to set PORTFOLIO dropdown */
+.navbar-custom .nav-item-mobile .nav-link {
+	padding: 1.125rem 1.5rem 1.125rem 1.8rem;
+    text-align: left;
+    width: auto;
+    color: #f7f5f5;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+.navbar-custom .nav-item-mobile .nav-link:hover {
+  	color: #69d27c;
+}
+.navbar-custom .nav-item-mobile .nav-link:active {
+	color: white;
+}
+
+.navbar-custom .dropdown:hover > .dropdown-menu {
+	display: block; /* this makes the dropdown menu stay open while hovering it */
+	min-width: auto;
+	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+@keyframes fadeDropdown {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-custom .dropdown-toggle:focus { /* removes dropdown outline on focus */
+	outline: 0;
+}
+
+.navbar-custom .dropdown-menu {
+	margin-top: 0;
+	border: none;
+	border-radius: 0.25rem;
+	background-color: #7864F6;
+}
+
+.navbar-custom .dropdown-item {
+	color: #f7f5f5;
+	opacity: 0.8;
+    font: 0.875rem/0 "indivisible", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+}
+.navbar-custom .dropdown-item:hover {
+	background-color: #7864F6;
+	color: #fff;
+	opacity: 1;
+}
+
+.navbar-custom .dropdown-items-divide-hr {
+	width: 100%;
+	height: 1px;
+	margin: 0.75rem auto 0.725rem auto;
+	border: none;
+	background-color: #c4d8dc;
+	opacity: 0.2;
+}
+
+.navbar-custom .nav-item .btn-outline-sm {
+	margin-top: 0.25rem;
+	margin-bottom: 1.375rem;
+	margin-left: 0.5rem;
+	border: 0.125rem solid #fff;
+	color: #fff;
+}
+
+.navbar-custom .nav-item .btn-outline-sm:hover {
+	background-color: #FFC700;
+	color: black;
+	border: 0.125rem solid black;
+}
+
+.navbar-custom .navbar-toggler {
+	padding: 0;
+	border: none;
+	color: white;
+	font-size: 2rem;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+/* end of menu */
+
+/**********/
+/* header */
+/**********/
+
+/* all headers background settings */
+.header, .header-general {
+    background: radial-gradient(at top left, rgba(72,211,89) 0%, rgba(120,100,246,1) 75%);
+    background-size: 160% 160%; 
+    animation: gradient 4s ease infinite;
+}
+
+/* homepage header only */
+.header {
+    height: 1000px;
+}
+
+/* other headers */
+.header-general {
+    height: 900px;
+}
+
+/* gradient background gradient */
+@keyframes gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	50% {
+		background-position: 0% 48%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 100% 100%;
+	}
+	50% {
+		background-position: 0% 48%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
+
+/* footer section */
+.footer {
+    position: relative;
+    z-index: 998;
+    background-color: black;
+}
+
+/* entire space with project cards */
+.projects {
+    width: 100%;
+    position: relative;
+    z-index: 998;
+    background-color: white;
+	text-align: left;
+    padding-top: 5%;
+	padding-bottom: 8%;
+}
+
+/* project card left */
+.card-left {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;
+}
+.card-left:hover {
+    background: #E9E9E9;
+}
+
+/* project card right */
+.card {
+    transition: all 0.2s;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 48%;
+    height: auto;
+    border-radius: 0.8rem;
+    border: none;
+    background: #F5F5F5;}
+.card:hover {
+    background: #E9E9E9;
+}
+
+/* project card content */
+.card-body {
+    padding: 1.2rem;
+    text-align: left;
+}
+
+/* project card image and display image that is not zooming in */
+.card-image, .card-image-display {
+    width: 100%;
+    border-width: 3rem;
+    border: 0.2rem solid black;
+    border-radius: 0.6rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    box-shadow: 0px 0px 10px #B7B7B7;
+}
+
+.card-image:hover {
+    background-size: 200% auto;
+}
+
+/* display image on hover */
+.card-image-display:hover {
+    background-size: 110% auto;
+    transition: all 0.2s ease;
+}
+
+.card-image-display:not(:hover) {
+    transition: all 0.2s ease;
+} 
+
+/* project card title */
+.card-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+/* project card description */
+.card-description {
+    padding-bottom: 0.5rem;
+}
+
+/* button under title */
+.btn-card {
+    display: inline-block;
+    text-align: center;
+    width: 11rem;
+	padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+	border: 0.125rem solid black;
+	border-radius: 2rem;
+	background-color: white;
+	color: black;
+    font: 0.775rem/0 "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+	transition: all 0.2s;
+    box-shadow: 0px 0px 10px #B7B7B7;
+}
+.btn-card:hover {
+	background-color: black;
+	color: white;
+    box-shadow: 0px 0px 0px #B7B7B7;
+    text-decoration: none;
+}
+
+/* footer black wave */	
+.footer-frame {
+    height: 5rem;
+    width: 100%;
+}
+
+/* social block */
+.footer .icon-container {
+	text-align: left;
+}
+
+/* social icons */
+.footer .fa-stack {
+	margin-right: 1rem;
+	font-size: 1.3rem;
+}
+
+/* social icons inside */
+.footer .fa-stack .fa-stack-1x {
+    color: black;
+	transition: all 0.2s ease;
+}
+
+/* social icon circles */
+.footer .fa-stack .fa-stack-2x {
+	color: #7864F6;
+	transition: all 0.2s ease;
+}
+
+/* social icons inside on hover */
+.footer .fa-stack:hover .fa-stack-1x {
+	color: black;
+}
+
+/* social icon circles on hover so their color is not interrupted */
+.footer .fa-stack:hover .fa-stack-2x {
+    color: white;
+}
+
+/* back-to-top purple button */
+a.back-to-top {
+	position: fixed;
+	z-index: 999;
+	right: 0.75rem;
+	bottom: 0.75rem;
+	display: none;
+	width: 2.625rem;
+	height: 2.625rem;
+	border-radius: 10.875rem;
+	background: #7864F6 url("../images/up-arrow-white.svg") no-repeat center 47%;
+	background-size: 1.125rem 1.125rem;
+	text-indent: -9999px;
+}
+
+a:hover.back-to-top {
+    background: #F2F2F2 url("../images/up-arrow-black.svg") no-repeat center 47%;
+    background-size: 1.125rem 1.125rem;
+}
+
+/* MEDIA QUARIES/SCREEN SIZES START HERE 
+    the order goes from smallest to largest and cannot be changed */
+
+/****************************************/
+/* all screens of 68px width and larger */
+/****************************************/
+
+@media (min-width: 68px) {
+    
+/* project card image that IS zooming in to block zoom on mobile */
+.card-image:hover {
+    background-size: 100% auto;
+}
+    
+/* display image that IS NOT zooming in to block zoom on mobile */
+.card-image-display:hover {
+    background-size: 100% auto;
+}
+   
+/* left project card alignment settings - to fix extra space on the right on mobile */
+.card-left {
+    margin-right: 0rem;
+}
+
+/* right project card */
+.card, card-left {
+    width: 100%;
+}
+ 
+/* left project card */
+.card-left {
+    width: 100%;
+}
+  
+/* project card image */
+.card-image, .card-image-display {
+    height: 18rem;
+}
+   
+/* title of project card */
+h2 {
+	font: 1.175rem/1.75rem "indivisible", sans-serif;
+    font-weight: 600;
+}
+  
+/* project card content */
+.card-body {
+    text-align: center;
+}
+
+/* project card title */
+.card-title {
+    margin-top: 1rem;
+    text-align: center;
+}
+     
+/* other headers */
+.header-general {
+    margin-bottom: -650px;
+}
+      
+/* other headers content */
+.header-general .header-content {
+    text-align: center;
+    padding-top: 11rem;
+} 
+
+/* product design section */
+.product-design {
+    text-align: center;
+	transition: all 0.2s;
+    background: #bbacd6;
+    background-image: url('../images/projects_displays/ux_mobile.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25rem;
+    margin-bottom: -6rem;
+    padding-top: 5rem;
+}
+     
+/* graphic design section */
+.graphic-design {
+	transition: all 0.2s;
+    background: #f8d6aa;
+    background-image: url('../images/projects_displays/gd_mobile.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25rem;
+    margin-top: -7rem;
+    padding-top: 10rem;
+    text-align: center;
+}
+ 
+/* VIEW PROJECTS button */
+.btn-line-view-projects {
+	display: inline-block;
+	padding: 1.5rem 1.125rem 1.5rem 1.125rem;
+    margin-top: 2rem;
+	border: 0.125rem solid black;
+	border-radius: 2rem;
+	background-color: black;
+	color: white;
+    font: 0.8rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+	transition: all 0.2s;
+}
+/* so it doesn't change on mobile */
+.btn-line-view-projects:hover {
+    text-decoration: none;
+	color: white;
+}
+    
+/* styles for button shape */
+.btn-skills {
+	padding: 0.3rem 0rem 0.3rem 1rem;
+    margin-top: 0.6rem;
+    margin-right: 0.2rem;
+    font: 0.8rem/0rem "indivisible", sans-serif;
+}
+       
+/* name title */
+.header .text-container {
+    height: 21rem;
+    margin-top: 8.4rem;
+    text-align: center; /* otherwise goes left on bigger screens */
+}
+ 
+/* about and footer section */
+.about, .footer {
+    padding-bottom: 4rem;
+	padding-top: 4rem;        
+}
+   
+/* header menu */
+.navbar-custom {
+    background-color: rgba(255,255,255,0.3);
+}
+ 
+/* image of me container*/
+.image-container {
+    text-align: center; /* otherwise goes left on bigger screens */
+    position: absolute; /* otherwise goes down on bigger screens */
+    margin-top: -35rem;
+} 
+    
+/* image of me */ 
+.img-wrapper {
+    width: 230px; 
+    display: inline-block;
+    opacity: .8;
+} 
+  
+/* homepage header only */ 
+.header {
+    margin-bottom: -610px;
+}
+     
+/* homepage header only content */ 
+.header .header-content {
+    padding-top: 11rem;
+}
+    
+/* title page header */
+.name {
+	font: 4.5rem/3.2rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -7px;
+} 
+    
+/* to hide web dropdown in header on mobile */
+.dropdown {
+    display: none;
+}
+
+/* about top wave */
+.about-top-wave {
+    height: 2rem;
+}
+  
+/* footer black wave */	
+.footer-frame {
+    height: 2rem;
+}
+
+/* title of page section */
+h1 {
+    font: 1.5rem/2rem "indivisible", sans-serif;
+    font-weight: 900;
+}
+  
+/* about section */
+.about {
+    text-align: center;
+}
+
+/* about bottom wave */
+.about-bottom-wave {
+    height: 3rem;
+    stroke-width: 1.5rem;
+    margin-top: -0.1rem; /* to hide white line between about section and wave */
+}
+
+/* footer section */
+.footer {
+	text-align: center;
+}
+ 
+/* title of footer section */
+h1-footer {
+    font: 1.5rem/2rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+   
+/* social block */
+.footer .icon-container {
+	text-align: center;
+}  
+}
+
+/********************************************/
+/* all screens of 768px width and larger    */
+/********************************************/
+    
+@media (min-width: 768px) {
+    
+/* left project card */
+.card-left {
+    transition: all 0.2s;
+    margin-right: 2rem;
+}
+     
+/* other headers */
+.header-general {
+    margin-bottom: -601px;
+}
+   
+/* other headers content */
+.header-general .header-content {
+    padding-top: 10rem;
+} 
+
+/* page title */
+.header-general .text-container {
+    margin-top: -2rem;
+} 
+     
+/* VIEW PROJECTS button */
+.btn-line-view-projects {
+	padding: 1.8rem 2.125rem 1.8rem 2.125rem;
+    font: 1rem/0rem "indivisible", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+} 
+.btn-line-view-projects:hover {
+    text-decoration: none;
+	color: white;
+}
+    
+/* about anf footer section */
+.about, .footer {
+    padding-bottom: 8rem;
+	padding-top: 8rem;        
+}
+     
+/* styles for button shapes */
+.btn-skills {
+	padding: 0.6rem 0rem 0.6rem 2rem;
+    margin-top: 1rem;
+    margin-right: 0.7rem;
+    font: 1rem/0rem "indivisible", sans-serif;
+	transition: all 0.2s;
+}
+ 
+/* header title and image block */
+.header .text-container {
+    margin-top: 14rem;
+    margin-bottom: -10rem;
+} 
+     
+/* image of me */ 
+.img-wrapper {
+    width: 410px; 
+} 
+    
+/* homepage header only */ 
+.header {
+    margin-bottom: -420px;
+}
+     
+/* homepage header only content */
+.header .header-content {
+    padding-top: 12rem;
+}
+
+/* title page header */
+.name {
+	font: 9rem/6.5rem "indivisible";
+    font-weight: 900;
+} 
+  
+/* about top wave */
+.about-top-wave {
+    height: 3rem;
+}
+    
+/* footer black wave */	
+.footer-frame {
+    height: 3rem;
+}
+  
+/* title of page section */
+h1 {
+    font: 2rem/2.4rem "indivisible", sans-serif;
+    font-weight: 900;
+}
+  
+/* about bottom wave */
+.about-bottom-wave {
+    height: 6rem;
+    stroke-width: 1.2rem;
+}
+    
+/* right project card */
+.card {
+    width: 47%;
+}
+  
+/* left project card */
+.card-left {
+    margin-bottom: 2rem;
+    width: 47%;
+}
+     
+/* project card image and display image that is not zooming in */
+.card-image, .card-image-display {
+    height: 17.8rem;
+}
+  
+/* title of footer section */
+h1-footer {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+}    
+}
+
+/********************************************/
+/* all screens of 992px width and larger    */
+/********************************************/
+
+@media (min-width: 992px) {
+
+/* project card image that IS zooming in */
+.card-image:hover {
+    background-size: 200% auto;
+}
+
+/* project card image that IS NOT zooming in */
+.card-image-display:hover {
+    background-size: 110% auto;
+    transition: all 0.2s ease;
+}
+
+/* title of project card */
+h2 {
+	font: 1.375rem/1.75rem "indivisible", sans-serif;
+    font-weight: 600;
+}
+      
+/* project card content */
+.card-body {
+    padding: 1.2rem;
+    text-align: left;
+}
+     
+/* project card title */
+.card-title {
+    margin-top: 2rem;
+    text-align: left;
+}
+    
+/* other headers */
+.header-general {
+    margin-bottom: -523px;
+}
+    
+/* page title */
+.header-general .text-container {
+    margin-top: 0rem;
+} 
+   
+/* product design section */
+.product-design {
+    background: #dbdbdb;
+    background-image: url('../images/projects_displays/ux_bw.png'); 
+    background-repeat: no-repeat;
+    height: 33rem;
+    padding-top: 10rem;
+}
+.product-design:hover {
+    background: #b8a0e2;
+    background-image: url('../images/projects_displays/ux_colored.png'); 
+    background-repeat: no-repeat;
+}
+    
+/* graphic design section */
+.graphic-design {
+    background: #cbcbcb;
+    background-image: url('../images/projects_displays/gd_bw.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    height: 33rem;
+    margin-top: -9rem;
+    padding-top: 14rem;
+    text-align: left;
+}
+.graphic-design:hover {
+    background: #f8c582;
+    background-image: url('../images/projects_displays/gd_colored.png'); 
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+}
+    
+/* VIEW PROJECTS button */
+.btn-line-view-projects {
+	background-color: transparent;
+	color: black;
+}
+.btn-line-view-projects:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+    
+/* header menu */
+.navbar-custom {
+    background-color: transparent;
+}
+    
+/* image of me block */
+.image-container {
+    margin-top: -32rem;
+}
+  
+/* homepage header only */
+.header {
+    margin-bottom: -370px;
+}
+
+/* page title header */
+.name {
+	font: 11.5rem/8.5rem "indivisible";
+    font-weight: 900;
+} 
+    
+/* portfolio dropdown */
+.dropdown {
+    display: inline-block;
+}
+    
+/* portfolio dropdown on mobile */
+.nav-item-mobile {
+    display: none;
+}
+  
+/* product-design section */
+.product-design {
+    text-align: left;
+    background-position: 75% 50%;
+}
+.product-design:hover {
+    background-position: 75% 50%;
+}
+  
+/* about top wave */
+.about-top-wave {
+    height: 4rem;
+}
+   
+/* footer black wave */	
+.footer-frame {
+    height: 4rem;
+}
+
+/* title of page section */
+h1 {
+    font: 2.2rem/2.8rem "indivisible", sans-serif;
+    font-weight: 900;
+    text-align: left;  
+}
+
+/* about section */    
+.about {
+    text-align: left;
+}
+
+/* about bottom wave */
+.about-bottom-wave {
+    height: 8rem;
+    stroke-width: 1rem;
+}
+ 
+/* right and left project card */
+.card, .card-left {
+    width: 48%;
+}
+
+/* project card image and display image that is not zooming in */
+.card-image, .card-image-display {
+    height: 25.4rem;
+}
+  
+/* footer section */
+.footer {
+	text-align: left;
+}
+ 
+/* title of footer section */
+h1-footer {
+    font-weight: 900;
+}
+   
+/* body text in footer section */
+.body-text-footer {
+    text-align: left;
+}
+ 
+/* social block */
+.footer .icon-container {
+	text-align: left;
+}  
+}
+
+/*********************************************/
+/* all screens of 1200px width and larger    */
+/*********************************************/
+
+@media (min-width: 1200px) {
+  
+/* image of me */ 
+.img-wrapper {
+    margin-top: 40px;
+    z-index: 1;
+    width: 480px; 
+    display: inline-block;
+    opacity: .8;
+} 
+
+/* homepage header only */
+.header { 
+    margin-bottom: -345px;
+} 
+    
+/* whole home page header */
+.header .header-content {
+    text-align: left;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+} 
+    
+/* other headers */
+.header-general {
+    margin-bottom: -465px;
+}
+      
+/* page title header */
+.name {
+	font: 14rem/10.5rem "indivisible";
+    font-weight: 900;
+	letter-spacing: -4px;
+} 
+    
+/* image of me block */
+.image-container {
+    margin-top: -35rem;
+} 
+ 
+/* about section top wave */
+.about-top-wave {
+    height: 4rem;
+}
+     
+/* footer black wave */	
+.footer-frame {
+    height: 5rem;
+}
+ 
+/* about section bottom wave */
+.about-bottom-wave {
+    height: 9rem;
+    stroke-width: 0.7rem;
+}
+ 
+/* project card image and display image that is not zooming in */
+.card-image, .card-image-display {
+    height: 30.8rem;
+}
+}
+  
+/*********************************************/
+/* all screens of 1700px width and larger    */
+/*********************************************/
+
+@media (min-width: 1700px) { 
+    
+/* other headers */
+.header-general {
+    margin-bottom: -350px;
+}
+    
+/* image of me */ 
+.img-wrapper {
+    width: 580px; 
+} 
+
+/* homepage header only */
+.header {
+    margin-bottom: -230px;
+}
+       
+/* page title header */
+.name {
+	font: 19rem/14rem "indivisible";
+    font-weight: 900;
+} 
+}
